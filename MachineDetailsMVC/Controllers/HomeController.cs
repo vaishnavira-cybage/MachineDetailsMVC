@@ -11,7 +11,7 @@ public class HomeController : Controller
     {
         _httpClient = httpClientFactory.CreateClient();
         _httpClient.BaseAddress =
-            new Uri("https://localhost:7089/");
+            new Uri("http://172.17.0.2:8081/");
     }
 
     public async Task<IActionResult> Index()
